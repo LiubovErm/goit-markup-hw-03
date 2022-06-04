@@ -1,0 +1,260 @@
+/* основний колір тексту - #212121 */
+/* другий колір тексту - #757575 */
+/* білий текст та фон - #FFFFFF */
+/* колір тексту футер - rgba(255, 255, 255, 0.6) */
+/* колір акценту - #2196F3 */
+/* колір фону 1 - #E5E5E5 */
+/* колір фону 2 - #F5F4FA */
+/* колір фону herofooter - #2F303A */
+/* шрифти - Roboto, Raleway */
+
+:root {
+    --primary-text-color:#212121 ;
+    --secondary-text-color: #757575;
+    --mainwhite-color:#FFFFFF;
+    --color-text-footer:rgba(255, 255, 255, 0.6);
+    --accent-color:#2196F3;
+    --primary-bg-color: #E5E5E5;
+    --secondary-bg-color:#F5F4FA;
+    --hero-bg-color:#2F303A;
+}
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    background-color: var(--mainwhite-color);
+}
+.list {
+    list-style: none;
+}
+.bluelogo {
+    color:var(--accent-color);
+}
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+    text-decoration: none;
+}
+.navigation-link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    color:var(--primary-text-color);
+    margin: 25px;
+}
+.navigation-items {
+    display: flex;
+}
+.contactinfo:hover,
+.contactinfo:focus {
+   color:var(--accent-color);
+}
+.contactphone, 
+.contactmail {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;  
+    color:var(--secondary-text-color);
+    margin: 25px;
+}
+.hero {
+    background-image: url(../images/bg.jpg);
+    padding: 200px 452px 200px 452px;
+    background-size: auto;
+}
+.hero-title {
+    color: var(--mainwhite-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.reserv {
+    background-color: var(--accent-color);
+    color: var(--mainwhite-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    margin: 0 auto;
+}
+.benefits-subtitle {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.benefits-text {
+    color: var(--secondary-text-color);
+    line-height: 2;
+    letter-spacing: 0.03em;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team {
+    background-color: var(--secondary-bg-color);
+}
+.subtitle-membername {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.text-memberposition {
+    color:var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.footer {
+    background-color: var(--hero-bg-color);
+}
+.addresslink-footer {
+    color: var(--mainwhite-color);
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.mail-footer, .phone-footer {
+    color:var(--color-text-footer);
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+address {
+    font-style: normal;
+}
+.logofooter {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--mainwhite-color);
+    text-decoration: none;
+}
+.aboutusgallery,
+.ourbenefits {
+    display: flex;
+    justify-content: center;
+}
+.aboutusimg {
+    margin: 15px;
+}
+.benefits-items{
+    flex-basis: 270px;
+    margin: 15px;
+}
+.teamgallery {
+    display: flex;
+    justify-content: center;
+    padding: 25px 215px 94px 215px;
+}
+.team-item {
+    flex-basis: 270px;
+    margin: 15px;
+    background-color: var(--mainwhite-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 94px 668px 25px 668px;
+    margin: 0px;
+}
+.contact {
+    display: flex;}
+.button {
+    background-color: var(--secondary-bg-color);
+    color:var(--primary-text-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0px;
+    padding: 6px 32px;
+    margin: 8px;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--mainwhite-color);
+}
+.filter-button {
+    display: flex;
+    justify-content: center;
+}
+.items-projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 56px 215px 94px 215px;
+    justify-content: center; 
+    gap: 30px;
+}
+.projectcontainer {
+    border: 1px solid #EEEEEE;
+    flex-basis: 370px;
+}
+.portfoliomain {
+    background-color: var(--primary-bg-color);
+}
+.project-subtitle {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+.reserv, .button {
+    cursor: pointer;
+}
+.navigation-link.current {
+    color: var(--accent-color);
+}
+.reserv:hover,
+.reserv:focus {
+    background-color: #188CE8;
+}
+.gallery-projects {
+    padding: 0px 215px 47px 215px;
+}
+
