@@ -38,21 +38,27 @@ ul {
     margin: 0;
     padding: 0;
 }
-/* Header */
 
-.header {
-    width: 1600px;
+.container {
+    width: 1170px;
     margin: 0 auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section, .hero, .footer {
+    width: 1600px;
+    margin: auto;
+}
+/* Header */
+
 .bluelogo {
     color:var(--accent-color);
 }
-.header > .container {
+.container > .nav-container {
     display: flex;
     align-items: center;
-    margin: 0 215px;
-    width: 1170px;
-    max-height: 80px;
     margin: 0 auto;
 }
 .logo {
@@ -112,7 +118,8 @@ ul {
 .hero {
     background-image: url(../images/bg.jpg);
     padding: 200px 452px 200px 452px;
-    background-size: auto;
+    /* max-width: 1600px;
+    margin: 0 auto; */
 }
 .hero-title {
     color: var(--mainwhite-color);
@@ -122,10 +129,12 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .reserv {
     background-color: var(--accent-color);
     color: var(--mainwhite-color);
+    border: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
@@ -148,17 +157,27 @@ ul {
 }
 /* Benefits */
 
+.ourbenefits {
+    margin-bottom: 94px;
+}
 .benefits-subtitle {
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .benefits-text {
     color: var(--secondary-text-color);
-    line-height: 2;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.benefits-items {
+    flex-basis: 270px;
+}
+.benefits-items:not(:first-child) {
+    margin-left: 30px;
 }
 .section-title {
     font-weight: 700;
@@ -166,12 +185,16 @@ ul {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
-.benefits-items {
-    flex-basis: 270px;
-    margin: 15px;
+.aboutusgallery,
+.ourbenefits {
+    display: flex;
+    justify-content: center;
 }
-
+.about-item:not(:first-child) {
+    margin-left: 30px;
+}
 /* Team */
 
 .team {
@@ -183,6 +206,7 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 10px;
 }
 .text-memberposition {
     color:var(--secondary-text-color);
@@ -194,14 +218,15 @@ ul {
 .teamgallery {
     display: flex;
     justify-content: center;
-    padding: 25px 215px 94px 215px;
 }
 .team-item {
     flex-basis: 270px;
-    margin: 15px;
     background-color: var(--mainwhite-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:first-child) {
+    margin-left: 30px;
 }
 .team-title {
     font-weight: 700;
@@ -209,8 +234,11 @@ ul {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 94px 668px 25px 668px;
-    margin: 0px;
+    margin-bottom: 50px;
+}
+.info-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Footer */
@@ -218,15 +246,16 @@ ul {
 .footer {
     background-color: var(--hero-bg-color);
 }
+
 .addresslink-footer {
     color: var(--mainwhite-color);
-    line-height: 2;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
 .mail-footer, .phone-footer {
     color:var(--color-text-footer);
-    line-height: 2;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -242,16 +271,16 @@ address {
     color:var(--mainwhite-color);
     text-decoration: none;
 }
-.aboutusgallery,
-.ourbenefits {
-    display: flex;
-    justify-content: center;
+.contacts-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.aboutusimg {
-    margin: 15px;
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
-
-
+.address-item:first-child {
+    margin-top:20px
+}
     /* Portfolio */
 
 .button {
