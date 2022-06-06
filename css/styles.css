@@ -51,10 +51,6 @@ ul {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.section, .hero, .footer {
-    width: 1600px;
-    margin: auto;
-}
 
 /* Header */
 
@@ -66,6 +62,7 @@ ul {
     align-items: center;
 }
 .logo {
+    display: block;
     font-weight: 700;
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -73,10 +70,10 @@ ul {
     letter-spacing: 0.03em;
     color:var(--primary-text-color);
     text-decoration: none;
-}
-.navigation {
     padding-top: 24px;
     padding-bottom: 25px;
+}
+.navigation {
     margin-right: 93px;
 }
 .navigation-link {
@@ -85,11 +82,11 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em; 
     color:var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .navigation-items {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .nav-item:not(:last-child) {
     margin-right: 50px;
@@ -124,7 +121,7 @@ ul {
 
 .hero {
     background-image: url(../images/bg.jpg);
-    padding: 200px 452px;
+    padding: 200px;
 }
 .hero-title {
     color: var(--mainwhite-color);
@@ -135,6 +132,9 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 }
 .reserv {
     background-color: var(--accent-color);
@@ -162,9 +162,6 @@ ul {
 }
 /* Benefits */
 
-.ourbenefits {
-    margin-bottom: 94px;
-}
 .benefits-subtitle {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -196,6 +193,11 @@ ul {
 .ourbenefits {
     display: flex;
     justify-content: center;
+}
+
+/* about us */
+.about-us {
+    padding-top: 0;
 }
 .about-item:not(:first-child) {
     margin-left: 30px;
@@ -250,6 +252,8 @@ ul {
 
 .footer {
     background-color: var(--hero-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .addresslink-footer {
     color: var(--mainwhite-color);
@@ -274,10 +278,6 @@ address {
     letter-spacing: 0.03em;
     color:var(--mainwhite-color);
     text-decoration: none;
-}
-.contacts-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .address-item:not(:last-child) {
     margin-bottom: 9px;
