@@ -365,9 +365,6 @@ address {
 .link-portfolio {
     text-decoration: none;
 }
-.project-subtitle:hover,
-.project-subtitle:focus {
-    color: var(--accent-color);
-}
+
 
 
