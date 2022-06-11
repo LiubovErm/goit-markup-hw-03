@@ -18,6 +18,18 @@
     --secondary-bg-color:#F5F4FA;
     --hero-bg-color:#2F303A;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -349,6 +361,13 @@ address {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     padding: 20px 24px;
+}
+.link-portfolio {
+    text-decoration: none;
+}
+.project-subtitle:hover,
+.project-subtitle:focus {
+    color: var(--accent-color);
 }
 
 
